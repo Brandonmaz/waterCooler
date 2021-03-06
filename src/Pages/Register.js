@@ -11,7 +11,7 @@ export default function Register() {
 
 	const register = (e) => {
 		e.preventDefault();
-		fetch(`http://localhost:4000/register`, {
+		fetch(`https://afternoon-everglades-00122.herokuapp.com/`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
