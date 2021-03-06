@@ -9,7 +9,7 @@ export default function Todos() {
 	const [filter, setFilter] = useState("uncompleted");
 
 	const persist = (newTodos) => {
-		fetch(`http://localhost:4000/todos`, {
+		fetch(`https://afternoon-everglades-00122.herokuapp.com/todos`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -20,7 +20,7 @@ export default function Todos() {
 	};
 
 	useEffect(() => {
-		fetch(`http://localhost:4000/todos`, {
+		fetch(`https://afternoon-everglades-00122.herokuapp.com/todos`, {
 			method: "GET",
 			headers: {
 				"Content-Type": "application/json",
