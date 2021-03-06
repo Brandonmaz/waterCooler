@@ -1,0 +1,70 @@
+
+
+.body{
+    background-image: url("../design/images/watercooler_main.jpg");
+    height: 100vh;
+    padding-top: 20px;
+
+}
+.welcome {
+    position: absolute;
+    width: 403px;
+    height: 84px;
+    left: 519px;
+    top: 424px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.welcomeP {
+    position: absolute;
+    width: 476px;
+    height: 102px;
+    left: 482px;
+    top: 508px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.welcomeButton {
+    position: absolute;
+    width: 301px;
+    height: 41px;
+    left: 569px;
+    top: 610px;
+    
+    background: #49A8B2;
+    border-radius: 10px;
+}
+.welcomeRegister {
+    /* position: absolute; */
+    /* width: 158px;
+    height: 21px;
+    left: 640px;
+    top: 621px; */
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+/* 
+    text-align: center;
+    letter-spacing: 0.005em; */
+
+    color: #FFFFFF;
+}
