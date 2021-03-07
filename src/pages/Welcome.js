@@ -11,7 +11,6 @@ export default function Welcome() {
 	const logout = () => {
 		setCredentials(null);
 	};
-	{/* potentially mispelled credentials */}
 	return (
 		<div className="body">
 			<img className="glass" src={logo} alt="icon" />
