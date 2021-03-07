@@ -1,17 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
 .body {
     background-image: url("../design/images/watercooler_main.jpg");
-    height: 100vh;
-    padding-top: 20px;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.glass,
+.welcome,
+.welcomeButton,
+.welcomeLogin,
+.welcomeRegister {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.glass {
+    margin: 180px auto 0 auto;
 
 }
 
 .welcome {
-    position: absolute;
-    width: 403px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 23px auto 0 auto;
+    width: 420px;
     height: 84px;
-    left: 519px;
-    top: 424px;
-
+    /* left: 519px;
+top: 424px; */
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -23,12 +54,10 @@
 }
 
 .welcomeP {
-    position: absolute;
+    margin: 0 auto;
     width: 476px;
     height: 102px;
-    left: 482px;
-    top: 508px;
-
+    padding-top: 15px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
@@ -37,35 +66,42 @@
     text-align: center;
 
     color: #FFFFFF;
+
 }
 
 .welcomeButton {
-    position: absolute;
+    margin: -10px auto 0 auto;
     width: 301px;
     height: 41px;
-    left: 569px;
-    top: 610px;
+    border: none;
 
     background: #49A8B2;
     border-radius: 10px;
 }
 
-.welcomeRegister {
-    /* position: absolute; */
-    /* width: 158px;
-    height: 21px;
-    left: 640px;
-    top: 621px; */
+.welcomeRegister,
+.welcomeLogin {
+    color: white;
     text-decoration: none;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    /* identical to box height */
-    /* 
-    text-align: center;
-    letter-spacing: 0.005em; */
+}
 
-    color: #FFFFFF;
+.signinContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.member {
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.welcomeLogin {
+    color: white;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 12px;
+
 }
