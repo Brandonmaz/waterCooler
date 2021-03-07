@@ -1,11 +1,10 @@
-
-
-.body{
+.body {
     background-image: url("../design/images/watercooler_main.jpg");
     height: 100vh;
     padding-top: 20px;
 
 }
+
 .welcome {
     position: absolute;
     width: 403px;
@@ -22,6 +21,7 @@
 
     color: #FFFFFF;
 }
+
 .welcomeP {
     position: absolute;
     width: 476px;
@@ -45,10 +45,11 @@
     height: 41px;
     left: 569px;
     top: 610px;
-    
+
     background: #49A8B2;
     border-radius: 10px;
 }
+
 .welcomeRegister {
     /* position: absolute; */
     /* width: 158px;
@@ -62,7 +63,7 @@
     font-size: 14px;
     line-height: 21px;
     /* identical to box height */
-/* 
+    /* 
     text-align: center;
     letter-spacing: 0.005em; */
 
