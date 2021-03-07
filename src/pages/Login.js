@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { CredentialsContext } from "../App";
-import "../Login.css"
+import { Link } from "react-router-dom";
 
 export const handleErrors = async (response) => {
 	if (!response.ok) {
