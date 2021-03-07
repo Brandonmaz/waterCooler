@@ -16,6 +16,7 @@ export default function Welcome() {
 		<div className="body">
 			<img className="glass" src={logo} alt="icon" />
 			<h1 className="welcome">
+				{/* mispelled credentials */}
 				water cooler {credentails && credentails.username}
 			</h1>
 			<p className="welcomeP">daily good habit reminders</p>
