@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import { CredentialsContext } from "../App";
-import Todos from "../components/Todos";
+// import Todos from "../components/Todos";
 import "./Welcome.css";
 import logo from "../design/logo/logo_nobackgound.svg";
 import background from "../design/images/watercooler_main.jpg";
@@ -36,8 +36,8 @@ export default function Welcome() {
 					</Link>
 				)}
 			</div>
-			{credentials && <button onClick={logout}>Logout</button>}
-			{credentials && <Todos />}
+			{/* {credentials && <button onClick={logout}>Logout</button>}
+			{credentials && <Todos />} */}
 		</div>
 	);
 }
