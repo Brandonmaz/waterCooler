@@ -63,7 +63,9 @@ export default function Account() {
 						</Link>
 						<br />
 						<button className="accountSubmitBtn" type="submit">
-							Sign out
+							<Link className="accountSubmitBtn" to="/">
+								Sign out
+							</Link>
 						</button>
 					</form>
 				</div>

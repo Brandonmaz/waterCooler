@@ -134,6 +134,7 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
    border: none;
    color: white;
    margin-top: 79px;
+   text-decoration: none;
 }
 .accountRegister {
     width: 108px;
