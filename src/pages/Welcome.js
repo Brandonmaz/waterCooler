@@ -11,7 +11,6 @@ export default function Welcome() {
 	const logout = () => {
 		setCredentials(null);
 	};
-
 	return (
 		<div className="body">
 			<img className="glass" src={logo} alt="icon" />

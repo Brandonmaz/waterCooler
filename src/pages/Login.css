@@ -1,3 +1,4 @@
+
 .loginContainer {
     background-image: url(../design/images/signin.jpg);
       min-height: 100%;
@@ -8,4 +9,222 @@
       position: fixed;
     top: 0;
     left: 0;
+
+
+
+.logincontainer {
+    background: url('../design/images/signin.jpg');
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.registercontainer {
+    background: url('../design/images/signup.jpg');
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+
+.LoginDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 354px;
+    height: 520px;
+    border: 1px solid black;
+    background: rgba(23, 98, 107, 0.4);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.RegisterDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 354px;
+    height: 520px;
+    border: 1px solid black;
+    background: linear-gradient(180deg, rgba(0, 211, 255, 0) -79.02%, rgba(0, 31, 37, 0.5) 117%);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.signinlogin{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.username{
+    width: 293px;
+    height: 45px;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 17px;
+    border-radius: 10px;
+    /* background: rgba(237, 254, 254, 0.6); */
+    box-shadow: -3px 4px 14px rgba(0, 0, 0, 0.15);
+    margin-bottom: 12px;
+    background: rgba(237, 254, 254, 0.6);
+    border: none;
+    outline: none;
+}
+
+.emaillogin{
+    width: 38px;
+    height: 21px;
+    font-family: Poppins;
+    margin-left: 30px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+
+}
+
+.password{
+    width: 293px;
+    height: 45px;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 17px;
+    border-radius: 10px;
+    /* margin-bottom: 32px; */
+    background: rgba(237, 254, 254, 0.6);
+    border: none;
+    outline: none;
+    box-shadow: -3px 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.passwordlogin{
+    width: 38px;
+    height: 21px;
+    font-family: Poppins;
+    margin-left: 30px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+
+}
+
+.forgotpassword{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.005em;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    margin-right: 30px;
+    margin-bottom: 32px;
+}
+
+.signinbutton{
+    width: 113px;
+    height: 41px;
+    border-radius: 10px;
+    background: #5BB1BE;
+    border: none;
+    outline: none;
+    box-shadow: -3px 4px 14px rgba(0, 0, 0, 0.15);
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.donthave{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.signinspan{
+    font-weight: 800;
+}
+
+.ptagor{
+    font-family: Poppins;
+    font-family: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+
+
+}
+
+.logingoogle{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* margin-left: 50px; */
+    margin: 0 auto;
+    width: 237px;
+    height: 41px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #0391A7;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-family: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+
+}
+
+.googlelogo{
+    margin-left: 25px;
+    margin-right: 17px;
+    height: 19px;
+    width: 18px;
+    /* margin-left: 1px; */
+    
 }
