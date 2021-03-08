@@ -35,7 +35,7 @@ export default function Login() {
 					username,
 					password,
 				});
-				history.push("/");
+				history.push("/todos");
 			})
 			.catch((error) => {
 				setError(error.message);
