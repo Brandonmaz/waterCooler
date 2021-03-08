@@ -34,6 +34,9 @@ function App() {
 						<Route exact path="/account">
 							<Account />
 						</Route>
+						<Route exact path="/onboarding1">
+							<Onboarding1 />
+						</Route>
 					</Switch>
 				</Router>
 			</CredentialsContext.Provider>

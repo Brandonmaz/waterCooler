@@ -17,11 +17,13 @@ export const handleErrors = async (response) => {
 export default function Login() {
 	const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");
+	// const [user, setUser] = useState();
 	const [error, setError] = useState("");
 	const [, setCredentials] = useContext(CredentialsContext);
 
 	const login = (e) => {
 		e.preventDefault();
+		// const user = {username, password};
 		fetch(`https://afternoon-everglades-00122.herokuapp.com/login/`, {
 			method: "POST",
 			headers: {
@@ -32,20 +34,27 @@ export default function Login() {
 				password,
 			}),
 		})
-			.then(handleErrors)
-			.then(() => {
-				setCredentials({
-					username,
-					password,
-				});
-				history.push("/todos");
-			})
-			.catch((error) => {
-				setError(error.message);
+		.then(handleErrors)
+		.then(() => {
+			setCredentials({
+				username,
+				password,
 			});
+			history.push("/todos");
+		})
+		.catch((error) => {
+			setError(error.message);
+		});
+		// setUser(response.data);
+		// localStorage.setItem('user', response.data);
+		// console.log(response.data);
 	};
 
 	const history = useHistory();
+
+	// if (user) {
+	// 	return <div>{user.name} is logged in</div>
+	// }
 
 	return (
 
@@ -57,6 +66,7 @@ export default function Login() {
 			<p className="emaillogin">Email</p>
           <input
             className="username"
+			value={username}
             onChange={(e) => setUsername(e.target.value)}
             // placeholder="username"
           />
@@ -65,6 +75,7 @@ export default function Login() {
           <input
             className="password"
             type="password"
+			value={password}
             onChange={(e) => setPassword(e.target.value)}
             // placeholder="password"
           />
