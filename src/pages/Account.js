@@ -6,6 +6,13 @@ import "./Account.css";
 import { Link } from "react-router-dom";
 
 export default function Account() {
+	// useEffect(() => {
+	// 	const loggedInUser = localStorage.getItem("user");
+	// 	if (loggedInUser) {
+	// 		const foundUser = JSON.parse(loggedInUser);
+	// 		setUser(foundUser);
+	// 	}
+	// }, []);
 	// const [account, setAccount] = useState([]);
 	// 	useEffect(() => {
 	// 			fetch(`https://afternoon-everglades-00122.herokuapp.com/`, {
