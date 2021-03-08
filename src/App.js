@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -13,6 +13,17 @@ export const CredentialsContext = React.createContext();
 
 function App() {
 	const credentialsState = useState(null);
+	const [username, setUsername] = useState("");
+	const [password, setPassword] = useState("");
+	const [user, setUser] = useState();
+
+	useEffect(() => {
+		const loggedInUser = sessionStorage.getItem("user");
+		if (loggedInUser) {
+			const foundUser = JSON.parse(loggedInUser);
+			setUser(foundUser);
+		}
+	}, []);
 
 	return (
 		<div className="App">
