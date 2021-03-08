@@ -44,6 +44,7 @@ export default function Todos() {
 	const toggleTodo = (id) => {
 		const newTodoList = [...todos];
 		const todoItem = newTodoList.find((todo) => todo.id === id);
+		console.log(todos.id)
 		todoItem.checked = !todoItem.checked;
 		setTodos(newTodoList);
 		persist(newTodoList);
