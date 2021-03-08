@@ -103,7 +103,7 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
 
 }
 .accountInfoFormText>input {
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
