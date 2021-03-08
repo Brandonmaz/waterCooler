@@ -26,8 +26,8 @@ export default function Account() {
 					<img className="accountGlass" src={logo} alt="icon" />
 				</button>
 				<div className="buttonToggle">
-					<button className="accountBtn">Account</button>
 					<button className="remindersBtn">Reminders</button>
+					<button className="accountBtn">Account</button>
 				</div>
 			</div>
 			<h1 className="accountTitle">Account</h1>
