@@ -1,8 +1,7 @@
 import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { CredentialsContext } from "../App";
-import { Link } from "react-router-dom";
-
+import "./Login.css";
 export const handleErrors = async (response) => {
 	if (!response.ok) {
 		const { message } = await response.json();
@@ -35,7 +34,7 @@ export default function Login() {
 					username,
 					password,
 				});
-				history.push("/");
+				history.push("/todos");
 			})
 			.catch((error) => {
 				setError(error.message);
@@ -45,7 +44,7 @@ export default function Login() {
 	const history = useHistory();
 
 	return (
-		<div>
+		<div className="loginContainer">
 			<h1>Login</h1>
 			{error && <span style={{ color: "red" }}>{error}</span>}
 			<form onSubmit={login}>
