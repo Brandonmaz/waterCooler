@@ -1,4 +1,16 @@
 
+.loginContainer {
+    background-image: url(../design/images/signin.jpg);
+      min-height: 100%;
+      width: 100%;
+      height: auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: fixed;
+    top: 0;
+    left: 0;
+
+
 
 .logincontainer {
     background: url('../design/images/signin.jpg');
@@ -215,5 +227,4 @@
     width: 18px;
     /* margin-left: 1px; */
     
-
 }
