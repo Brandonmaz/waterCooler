@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { CredentialsContext } from "../App";
@@ -6,6 +6,7 @@ import { CredentialsContext } from "../App";
 import "./Welcome.css";
 import logo from "../design/logo/logo_nobackgound.svg";
 import background from "../design/images/watercooler_main.jpg";
+
 export default function Welcome() {
 	const [credentials, setCredentials] = useContext(CredentialsContext);
 	const logout = () => {

@@ -5,7 +5,10 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Register from "./pages/Register";
 import Welcome from "./pages/Welcome";
 import Login from "./pages/Login";
+import Onboarding1 from "./pages/Onboarding1";
+
 import Todos from "./components/Todos";
+
 
 export const CredentialsContext = React.createContext();
 
@@ -28,6 +31,9 @@ function App() {
 						</Route>
 						<Route exact path="/todos">
 							<Todos />
+						</Route>
+						<Route exact path="/onboarding">
+							<Onboarding1 />
 						</Route>
 					</Switch>
 				</Router>
