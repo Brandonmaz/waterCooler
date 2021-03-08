@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { CredentialsContext } from "../App";
+
 import { Link } from "react-router-dom";
 import './Login.css'
 import google from '../design/icons/googlelogo.svg'
@@ -47,6 +48,7 @@ export default function Login() {
 	const history = useHistory();
 
 	return (
+
     <div className="logincontainer">
       <div className="LoginDiv">
         <h1 className="signinlogin">Sign In</h1>
@@ -78,4 +80,5 @@ export default function Login() {
       </div>
     </div>
   );
+
 }

@@ -6,7 +6,7 @@ import Register from "./pages/Register";
 import Welcome from "./pages/Welcome";
 import Login from "./pages/Login";
 import Todos from "./components/Todos";
-
+import Account from "./pages/Account";
 export const CredentialsContext = React.createContext();
 
 function App() {
@@ -28,6 +28,9 @@ function App() {
 						</Route>
 						<Route exact path="/todos">
 							<Todos />
+						</Route>
+						<Route exact path="/account">
+							<Account />
 						</Route>
 					</Switch>
 				</Router>
