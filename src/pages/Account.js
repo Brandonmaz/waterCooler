@@ -26,8 +26,16 @@ export default function Account() {
 					<img className="accountGlass" src={logo} alt="icon" />
 				</button>
 				<div className="buttonToggle">
-					<button className="remindersBtn">Reminders</button>
-					<button className="accountBtn">Account</button>
+					<button className="remindersBtn">
+						<Link className="remindersBtn" to="/todos">
+							Reminders
+						</Link>
+					</button>
+					<button className="accountBtn">
+						<Link className="remindersBtn" to="/account">
+							Account
+						</Link>
+					</button>
 				</div>
 			</div>
 			<h1 className="accountTitle">Account</h1>

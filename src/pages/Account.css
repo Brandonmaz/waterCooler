@@ -9,9 +9,9 @@
 .accountBody {
 min-height: 100%;
 width: 100%;
-height: 100vh;
-background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135, 154, 0) 103.03%);
-
+height: 100%;
+min-height: 100vh;
+background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135, 154, 0) 150.03%);
 }
 .accountHome {
     width: 105px;
@@ -31,6 +31,10 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
 .buttonToggle {
     margin-top: 56px;
 }
+.accountBtn {
+        box-shadow: -11px 2px 33px rgba(0, 0, 0, 0.16);
+
+}
 .accountBtn,
 .remindersBtn {
     width: 158px;
@@ -45,14 +49,12 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     font-size: 20px;
     line-height: 30px;
     cursor: pointer;
+    text-decoration: none;
 
 }
-.accountBtn:hover,
-.remindersBtn:hover {
-    box-shadow: -11px 2px 33px rgba(0, 0, 0, 0.16);
-   
-}
+
 .accountTitle {
+    
     display: block;
     margin: 75px auto 0 auto;
     width: 251px;
@@ -71,6 +73,7 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
 .accountInfoBox {
     margin-top: 74px;
     display: flex;
+    flex-wrap: wrap;
 }
 .accountInfo {
     display: block;
@@ -112,9 +115,12 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     margin-top: 12px;
     background-color: transparent;
     border: none;
+    width: 60%;
+    outline: none;
     /* margin-left: -110px; */
-    
-    
+}
+.accountInfoFormText>input:focus {
+       background: #5AA58F
 
 }
 .accountInfoFormText>input::placeholder {
@@ -138,10 +144,8 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     font-size: 12px;
     line-height: 18px;
     /* identical to box height */
-
     text-align: center;
     text-decoration-line: underline;
-
     color: #FFFFFF;
 }
 /* Notification tag */
@@ -153,14 +157,13 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
 
 }
 .notifactionSwitch {
-    width: 216px;
-    height: 33px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
     line-height: 33px;
     color: #FFFFFF;
+    display: flex;
 }
 
 /* Switch icon css */
@@ -262,4 +265,49 @@ input:checked+.slider:before {
     font-size: 14px;
     line-height: 21px;
     color: #FFFFFF;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* .accountBody {
+        background-color: rgba(0, 0, 0, 0.33);
+    } */
+    .accountHome {
+        width: 80px;
+        height: 80px;
+    }
+    .accountGlass {
+        width: 54px;
+        height: 79px;
+    }
+    .buttonToggle {
+        margin-top: 56px;
+    }
+    .accountInfoBox {
+        margin-top: 74px;
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: row-reverse; */
+        flex-direction: column-reverse;
+    }
+    .accountBtn,
+    .remindersBtn {
+        width: 128px;
+        height: 48px;
+    }
+    .accountInfo {
+        width: 450px;
+        height: 500px;
+        margin-bottom: 56px;
+    }
+    .accountInfoFormText>input {
+        width: 300px;
+    }
+    .accountSubmitBtn {
+        margin-top: 60px;
+    }
+    .accountStatusInfo {
+        margin-bottom: 30px;
+    }
+   
 }
