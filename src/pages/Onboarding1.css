@@ -1,0 +1,254 @@
+
+@font-face {
+    font-family: "PoppinsRegular";
+    src: local("PoppinsRegular"),
+    url("../design/Poppins_font/Poppins-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PoppinsBold";
+    src: local("PoppinsBold"),
+    url("../design/Poppins_font/Poppins-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+.onboarding-grid-container {
+    display: inline-grid;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-columns: auto;
+    border: none;
+    border-style: none;
+}
+
+.onboarding-container {
+    padding-top: 100px;
+}
+
+.onboarding-master {
+    background: linear-gradient(rgba(0, 90, 104, 0.7), rgba(12, 135, 154, 0));
+    height: 100vh;
+    min-height: 100%;
+    width: 100%;
+}
+
+.onboarding-hero {
+    margin-bottom: 40px;
+}
+
+.onboarding-grid-item {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    width: 216px;
+    height: 216px;
+    border-radius: 10px;
+    font-family: PoppinsBold;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: bold;
+    color: white;
+    border: none;
+    border-style: none;
+}
+
+.onboarding-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 113px;
+    height: 41px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: rgba(73, 168, 178, 1);
+    border: none;
+    border-style: none;
+    box-shadow: -3px 4px 14px 0px rgba(0, 0, 0, 0.15);
+    font-family: PoppinsRegular;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.onboarding-button:hover {
+    color: rgba(73, 168, 178, 1);
+    background-color: white;
+}
+
+.onboarding-hero > h1 {
+    font-family: PoppinsBold;
+    color: white;
+    font-size: 24px;
+    font-weight: 800px;
+    font-style: bold;
+
+}
+
+.onboarding-hero > p {
+    font-family: PoppinsRegular;
+    color: white;
+    font-size: 14px;
+    font-weight: 400px;
+    font-style: normal;
+}
+
+.onboarding-button-container {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.item1 {
+    background-image: url("../design/images/stayingactive.jpg");
+    border: none;
+    border-style: none;
+}
+
+.item1:hover {
+    background-image: url("../design/images/stayingactive_active.jpg");
+    border: none;
+    border-style: none;
+}
+
+.item2 {
+    background-image: url("../design/images/productivity.jpg");
+    border: none;
+    border-style: none;
+}
+
+.item2:hover {
+    background-image: url("../design/images/productivity_active.jpg");
+    border: none;
+    border-style: none;
+}
+
+.item3 {
+    background-image: url("../design/images/mindfulness.jpg");
+    border: none;
+    border-style: none;
+}
+
+.item3:hover {
+    background-image: url("../design/images/mindfulness_active.jpg");
+    border: none;
+    border-style: none;
+}
+
+.item4 {
+    background-image: url("../design/images/health.jpg");
+    border: none;
+    border-style: none;
+}
+
+.item4:hover {
+    background-image: url("../design/images/health_active.jpg");
+    border: none;
+    border-style: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .onboarding-grid-container {
+        display: inline-grid;
+        grid-column-gap: 18px;
+        grid-row-gap: 18px;
+        grid-template-columns: auto auto;
+        border: none;
+        border-style: none;
+    }
+
+    .onboarding-container {
+        padding-top: 156px;
+    }
+    
+    .onboarding-hero {
+        margin-bottom: 41px;
+    }
+
+    .onboarding-grid-item {
+        display: flex;
+        font-size: 19px;
+        align-items: center;
+        justify-content: center;
+        width: 216px;
+        height: 216px;
+        border-radius: 10px;
+        border: none;
+        border-style: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .onboarding-grid-container {
+        display: inline-grid;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-template-columns: auto auto auto;
+        border: none;
+        border-style: none;
+    }
+
+    .onboarding-container {
+        padding-top: 206px;
+    }
+    
+    .onboarding-hero {
+        margin-bottom: 42px;
+    }
+    
+    .onboarding-grid-item {
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        width: 217px;
+        height: 217px;
+        border-radius: 10px;
+        border: none;
+        border-style: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .onboarding-grid-container {
+        display: inline-grid;
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+        grid-template-columns: auto auto auto auto;
+        border: none;
+        border-style: none;
+    }
+
+    .onboarding-grid-item {
+        display: flex;
+        /* border: 1px solid gray; */
+        font-size: 22px;
+        align-items: center;
+        justify-content: center;
+        width: 218.7px;
+        height: 218.7px;
+        border-radius: 10px;
+        border: none;
+        border-style: none;
+    }
+
+    .onboarding-button {
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+        justify-content: center;
+        width: 113px;
+        height: 41px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    
+    .onboarding-button-container {
+        width: 100%;
+        /* border: 1px solid gray; */
+        display: block;
+        margin-top: 38.45px;
+    }
+}

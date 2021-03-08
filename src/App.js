@@ -5,8 +5,10 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Register from "./pages/Register";
 import Welcome from "./pages/Welcome";
 import Login from "./pages/Login";
-import Todos from "./components/Todos";
+import Onboarding1 from "./pages/Onboarding1";
 
+import Todos from "./components/Todos";
+import Account from "./pages/Account";
 export const CredentialsContext = React.createContext();
 
 function App() {
@@ -28,6 +30,12 @@ function App() {
 						</Route>
 						<Route exact path="/todos">
 							<Todos />
+						</Route>
+						<Route exact path="/account">
+							<Account />
+						</Route>
+						<Route exact path="/onboarding1">
+							<Onboarding1 />
 						</Route>
 					</Switch>
 				</Router>

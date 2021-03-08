@@ -1,0 +1,265 @@
+.accountNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-left: 52px;
+    padding-right: 66px;
+}
+.accountBody {
+min-height: 100%;
+width: 100%;
+height: 100vh;
+background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135, 154, 0) 103.03%);
+
+}
+.accountHome {
+    width: 105px;
+    height: 105px;
+    background-color: transparent;
+    border-radius: 15px;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.412);
+    border: none;
+    margin-top: 45px;
+    cursor: pointer;
+}
+.accountGlass {
+    width: 64px;
+    height: 91px;
+    
+}
+.buttonToggle {
+    margin-top: 56px;
+}
+.accountBtn,
+.remindersBtn {
+    width: 158px;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+
+}
+.accountBtn:hover,
+.remindersBtn:hover {
+    box-shadow: -11px 2px 33px rgba(0, 0, 0, 0.16);
+   
+}
+.accountTitle {
+    display: block;
+    margin: 75px auto 0 auto;
+    width: 251px;
+    height: 49px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+/* account form */
+.accountInfoBox {
+    margin-top: 74px;
+    display: flex;
+}
+.accountInfo {
+    display: block;
+    margin: 0 auto;
+    width: 503px;
+    height: 598px;
+    background: #6ECCB1;
+    box-shadow: -3px 4px 14px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.accountInfoFormText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.accountNames {
+    display: flex;
+    align-items: flex-start;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    width: 100px;
+    color: #FFFFFF;
+    margin-top: 76px;
+    
+    
+
+}
+.accountInfoFormText>input {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-top: 12px;
+    background-color: transparent;
+    border: none;
+    /* margin-left: -110px; */
+    
+    
+
+}
+.accountInfoFormText>input::placeholder {
+    color: #FFFFFF;
+}
+.accountSubmitBtn {
+   width: 175px;
+   height: 41px;
+   background: #5AA58F;
+   border-radius: 10px;
+   border: none;
+   color: white;
+   margin-top: 79px;
+}
+.accountRegister {
+    width: 108px;
+    height: 18px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+/* Notification tag */
+.notificationInfo {
+    display: block;
+    margin: 73px auto 0 auto;
+    width: 332px;
+    color: #FFFFFF;
+
+}
+.notifactionSwitch {
+    width: 216px;
+    height: 33px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+/* Switch icon css */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 33px;
+    height: 20px;
+    margin-right: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #474747;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background: #17E713;
+    border-radius: 11px;
+   
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #17E713;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* ================ */
+.statusClick {
+    color: #FFFFFF;
+    width: 332px;
+    height: 81px;
+    background: #5AA58F;
+    box-shadow: -3px 4px 14px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 11px auto 24px auto;
+}
+.statusP {
+    align-items: center;
+    margin-left: 45px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+
+}
+
+.accountStatusInfo {
+    width: 241px;
+    height: 42px;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
