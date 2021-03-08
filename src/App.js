@@ -36,13 +36,8 @@ function App() {
 						<Route exact path="/todos">
 							<Todos />
 						</Route>
-<<<<<<< HEAD
-						<Route exact path="/onboarding">
-							<Onboarding1 />
-=======
 						<Route exact path="/account">
 							<Account />
->>>>>>> ae6433b7d1cfab10ec7c0d0c27f70309409c7793
 						</Route>
 					</Switch>
 				</Router>
