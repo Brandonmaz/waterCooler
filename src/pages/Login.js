@@ -48,27 +48,6 @@ export default function Login() {
 	const history = useHistory();
 
 	return (
-<<<<<<< HEAD
-		<div className="login-box">
-			<h2>Login</h2>
-			{error && <span style={{ color: "red" }}>{error}</span>}
-			<form onSubmit={login}>
-				<input
-					onChange={(e) => setUsername(e.target.value)}
-					placeholder="username"
-				/>
-				<br />
-				<input
-					type="password"
-					onChange={(e) => setPassword(e.target.value)}
-					placeholder="password"
-				/>
-				<br />
-				<button type="submit">Login</button>
-			</form>
-		</div>
-	);
-=======
 
     <div className="logincontainer">
       <div className="LoginDiv">
@@ -102,5 +81,4 @@ export default function Login() {
     </div>
   );
 
->>>>>>> 32e6815e90b41984fe12e576fa79677dcad3e916
 }

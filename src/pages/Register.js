@@ -39,27 +39,6 @@ export default function Register() {
 	const history = useHistory();
 
 	return (
-<<<<<<< HEAD
-		<div>
-			<h1>Register</h1>
-			{error && <span style={{ color: "red" }}>{error}</span>}
-			<form onSubmit={register}>
-				<input
-					onChange={(e) => setUsername(e.target.value)}
-					placeholder="username"
-				/>
-				<br />
-				<input
-					type="password"
-					onChange={(e) => setPassword(e.target.value)}
-					placeholder="password"
-				/>
-				<br />
-				<button type="submit">Register</button>
-			</form> 
-		</div>
-	);
-=======
     <div className="registercontainer">
       <div className="RegisterDiv">
         <h1 className="signinlogin">Sign up</h1>
@@ -100,5 +79,4 @@ export default function Register() {
       </div>
     </div>
   );
->>>>>>> 32e6815e90b41984fe12e576fa79677dcad3e916
 }

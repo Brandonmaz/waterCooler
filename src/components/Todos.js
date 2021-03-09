@@ -1,7 +1,10 @@
 import React, { useState, useContext, useEffect } from "react";
+import logo from "../design/logo/logo_nobackgound.svg";
 import { CredentialsContext } from "../App";
+
 import { v4 as uuidv4 } from "uuid";
 import "./Todos.css"
+import 'semantic-ui-css/semantic.min.css'
 
 export default function Todos() {
 	const [todos, setTodos] = useState([]);
@@ -63,40 +66,79 @@ export default function Todos() {
 
 	return (
 		<div className="todosBody">
-			<div>navbar</div>
-			<div className="todos-dropdown-container">
-				<div className="todos-dropdown-div">
-					<div className="todos-dropdown-item">
-						<div id="todo-dropdown"className="todo-dropdown-content">
-							<form className="todo-form-content" onSubmit={addTodo}>
+			<div className="todosNavbar">
+				<button className="todosHome">
+					<img className="todosGlass" src={logo} alt="icon" />
+				</button>
+				<div className="buttonToggle">
+					<button className="remindersBtn">Reminders</button>
+					<button className="accountBtn">Account</button>
+				</div>
+			</div>
+		<div className="todos-flex">
+			<div className="ui compact menu">
+				<div role="listbox" aria-expanded="false" className="ui item simple dropdown no-hover" tabindex="0">
+					<div aria-atomic="true" aria-live="polite" role="alert" className="divider text">
+						Create new reminder
+					</div>
+					<button className="plus icon">
+						<i aria-hidden="true" className="plus icon"></i>
+					</button>
+					<div className="menu transition">
+						<div className="todos-dropdown-item">
+							<i aria-hidden="true" className="angle up icon"></i>
+							<label className="switch-create">
 								<input
-									value={todoText}
-									onChange={(e) => setTodoText(e.target.value)}
-									type="text"
-								></input><br />
-								<button type="submit">Save</button>
-							</form>
-							<div className="todos-create">
-							<select value={filter} onChange={(e) => changeFilter(e.target.value)}>
-								<option value="completed">Completed</option>
-								<option value="uncompleted">Uncompleted</option>
-							</select>
-
-							{getTodos().map((todo) => (
-								<div key={todo.id}>
+									className="checkbox"
+									type="checkbox"
+								/>
+								<span class="slider round"></span>
+							</label>
+								<form className="todo-form-content" onSubmit={addTodo}>
+									<p className="todo-p">Task name</p>
 									<input
-										checked={todo.checked}
-										onChange={() => toggleTodo(todo.id)}
-										type="checkbox"
-									/>
-									<label>{todo.text}</label>
-								</div>
-							))}
-							</div>
+										className="input-todos"
+										value={todoText}
+										onChange={(e) => setTodoText(e.target.value)}
+										type="text"
+									></input>
+									<br />
+									<p className="notification-p">Notification sound</p>
+									<input
+										className="input-todos"
+										type="text"
+									></input><br />
+									<button className="todos-save-btn" type="submit">Save</button>
+								</form>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>		
+		<div className="list-todos">
+			<select value={filter} onChange={(e) => changeFilter(e.target.value)}>
+				<option value="completed">Completed</option>
+				<option value="uncompleted">Uncompleted</option>
+			</select>
+
+			{getTodos().map((todo) => (
+				<div className="todo-item-div" key={todo.id}>
+					<label 
+						className="todo-item "
+						>{todo.text}
+					</label>
+					<label className="switch">
+					<input
+						className="checkbox"
+						checked={todo.checked}
+						onChange={() => toggleTodo(todo.id)}
+						type="checkbox"
+					/>
+					<span class="slider round"></span>
+					</label>
+				</div>
+			))}
 		</div>
+		</div>
+	</div>
 	);
 }
