@@ -10,9 +10,11 @@ export default function Register() {
 	const [password, setPassword] = useState("");
 	const [error, setError] = useState("");
 	const [, setCredentials] = useContext(CredentialsContext);
+  const [user, setUser] = useState();
 
 	const register = (e) => {
 		e.preventDefault();
+    const user = {username, password};
 		fetch(`https://afternoon-everglades-00122.herokuapp.com/`, {
 			method: "POST",
 			headers: {
@@ -34,6 +36,9 @@ export default function Register() {
 			.catch((error) => {
 				setError(error.message);
 			});
+     
+      setUser(register.data);
+      sessionStorage.setItem("user", JSON.stringify(register.data));
 	};
 
 	const history = useHistory();
@@ -47,6 +52,7 @@ export default function Register() {
           <p className="emaillogin">Email</p>
           <input
             className="username"
+            value={username}
             onChange={(e) => setUsername(e.target.value)}
             // placeholder="username"
           />
@@ -55,6 +61,7 @@ export default function Register() {
           <input
             className="password"
             type="password"
+            value={password}
             onChange={(e) => setPassword(e.target.value)}
             // placeholder="password"
           />

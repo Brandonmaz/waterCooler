@@ -6,6 +6,9 @@ import "./Account.css";
 import { Link } from "react-router-dom";
 
 export default function Account() {
+	const [user, setUser] = useState();
+	const [username, setUsername] = useState("");
+	const [password, setPassword] = useState("");
 	// useEffect(() => {
 	// 	const loggedInUser = localStorage.getItem("user");
 	// 	if (loggedInUser) {
@@ -25,6 +28,22 @@ export default function Account() {
 	// 				.then((response) => response.json())
 	// 				.then((todos) => setTodos(todos));
 	// 		}, []);
+
+	const handleLogout = () => {
+		setUser({});
+		setUsername("");
+		setPassword("");
+		sessionStorage.clear();
+	};
+
+	// if (user) {
+	// 	return (
+	// 		<div>
+	// 			{user.name} is logged in user
+	// 			<button onClick={}>Logout</button>
+	// 		</div>
+	// 	);
+	// }
 
 	return (
 		<div className=" accountBody">
@@ -62,10 +81,12 @@ export default function Account() {
 							change password
 						</Link>
 						<br />
-						<button className="accountSubmitBtn" type="submit">
-							<Link className="accountSubmitBtn" to="/">
-								Sign out
-							</Link>
+						<button
+							className="accountSubmitBtn"
+							type="submit"
+							onClick={handleLogout}
+						>
+							Sign out
 						</button>
 					</form>
 				</div>

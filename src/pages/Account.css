@@ -123,6 +123,7 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
        background: #5AA58F
 
 }
+.icon::before
 .accountInfoFormText>input::placeholder {
     color: #FFFFFF;
 }
