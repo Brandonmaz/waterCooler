@@ -15,29 +15,26 @@ export default function Welcome() {
 	return (
 		<div className="body">
 			<img className="glass" src={logo} alt="icon" />
-			<h1 className="welcome">
-				water cooler {credentials && credentials.username}
-			</h1>
+			<h1 className="welcome">water cooler</h1>
 			<p className="welcomeP">daily good habit reminders</p>
 			<button className="welcomeButton">
-				{!credentials && (
-					<Link className="welcomeRegister" to="/register">
-						let's get started
-					</Link>
-				)}
+				<Link className="welcomeRegister" to="/register">
+					let's get started
+				</Link>
 			</button>
 
 			<br />
 			<div className="signinContainer">
 				<p className="member">Already a member?</p>
-				{!credentials && (
+				<Link className="welcomeLogin" to="/login">
+					Sign In
+				</Link>
+				{/* {!credentials && (
 					<Link className="welcomeLogin" to="/login">
 						Sign in
 					</Link>
-				)}
+				)} */}
 			</div>
-			{/* {credentials && <button onClick={logout}>Logout</button>}
-			{credentials && <Todos />} */}
 		</div>
 	);
 }

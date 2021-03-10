@@ -31,7 +31,7 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
 .buttonToggle {
     margin-top: 56px;
 }
-.accountBtn {
+.accountAcc {
         box-shadow: -11px 2px 33px rgba(0, 0, 0, 0.16);
 
 }
@@ -51,6 +51,10 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     cursor: pointer;
     text-decoration: none;
 
+}
+.accountBtn:hover,
+.remindersBtn:hover {
+    color: white;
 }
 
 .accountTitle {
@@ -89,6 +93,8 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     display: flex;
     flex-direction: column;
     margin-left: 50px;
+    margin-top: 76px;
+    
 }
 .accountNames {
     display: flex;
@@ -101,52 +107,64 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     width: 100px;
     color: #FFFFFF;
     margin-top: 76px;
-    
+
     
 
 }
-.accountInfoFormText>input {
+.accountEdit {
+    display: flex;
+    align-items: center;
+    
+}
+.accountEdit>a {
+    margin-top: 15px;
+    color: white;
+}
+.accountEdit>input {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 27px;
     color: #FFFFFF;
-    margin-top: 12px;
+    margin-top: 10px;
     background-color: transparent;
     border: none;
     width: 60%;
     outline: none;
     /* margin-left: -110px; */
 }
-.accountInfoFormText>input:focus {
-       background: #5AA58F
+.accountEdit>input:focus {
+    background: #5AA58F
 
 }
 .icon::before
-.accountInfoFormText>input::placeholder {
+.accountEdit>input::placeholder {
     color: #FFFFFF;
 }
 .accountSubmitBtn {
-   width: 175px;
-   height: 41px;
-   background: #5AA58F;
-   border-radius: 10px;
-   border: none;
-   color: white;
-   margin-top: 79px;
-   text-decoration: none;
+    width: 175px;
+    height: 41px;
+    background: #5AA58F;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    margin-top: 79px;
+    text-decoration: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 .accountRegister {
-    width: 108px;
+    display: flex;
+    width: 120px;
     height: 18px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
-    /* identical to box height */
-    text-align: center;
+    
+    
     text-decoration-line: underline;
     color: #FFFFFF;
 }
@@ -211,7 +229,7 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
 input:checked+.slider {
     background: #17E713;
     border-radius: 11px;
-   
+
 }
 
 input:focus+.slider {
