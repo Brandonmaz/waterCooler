@@ -75,15 +75,19 @@ export default function Todos() {
 					<button className="accountBtn">Account</button>
 				</div>
 			</div>
+			<div className="todo-title-div">
+				<h1 className="todo-title-h1">Reminders</h1>
+				<p className="todo-title-p">Here are your custom reminders. You can <br />adjust them to fit your needs</p>
+			</div>
 		<div className="todos-flex">
 			<div className="ui compact menu">
 				<div role="listbox" aria-expanded="false" className="ui item simple dropdown no-hover" tabindex="0">
 					<div aria-atomic="true" aria-live="polite" role="alert" className="divider text">
 						Create new reminder
 					</div>
-					<button className="plus icon">
+					{/* <button className="plus icon"> */}
 						<i aria-hidden="true" className="plus icon"></i>
-					</button>
+					{/* </button> */}
 					<div className="menu transition">
 						<div className="todos-dropdown-item">
 							<i aria-hidden="true" className="angle up icon"></i>
@@ -115,13 +119,16 @@ export default function Todos() {
 				</div>
 			</div>		
 		<div className="list-todos">
-			<select value={filter} onChange={(e) => changeFilter(e.target.value)}>
-				<option value="completed">Completed</option>
-				<option value="uncompleted">Uncompleted</option>
-			</select>
+			<div className="completed-list">
+				<select value={filter} onChange={(e) => changeFilter(e.target.value)}>
+					<option className="option-list"value="completed">Completed</option>
+					<option calssName="option-list"value="uncompleted">Uncompleted</option>
+				</select>
+			</div>
 
 			{getTodos().map((todo) => (
 				<div className="todo-item-div" key={todo.id}>
+					<i aria-hidden="true" className="angle up icon list"></i>
 					<label 
 						className="todo-item "
 						>{todo.text}
