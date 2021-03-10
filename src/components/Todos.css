@@ -56,10 +56,14 @@
     cursor: pointer;
     outline: none;
 }
-
 .accountBtn:hover,
 .remindersBtn:hover {
+    color: white;
+}
+
+.todoRem {
     box-shadow: -11px 2px 33px rgba(0, 0, 0, 0.16);
+
 }
 
 
@@ -265,6 +269,17 @@ select:hover {
     background-color: #58bcc2;
     border-radius: 10px;
     margin-bottom: 11px;
+    filter: drop-shadow(-5px 2px 4px rgba(0, 0, 0, 0.2));
+}
+.todo-Box {
+    overflow-y: scroll;
+    height: 395px;
+    width: 400px;
+    margin-right: 120px;
+    padding: 10px;
+}
+.todo-Box::-webkit-scrollbar {
+    display: none;
 }
 
 .todo-item {

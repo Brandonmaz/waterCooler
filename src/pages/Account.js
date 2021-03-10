@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
-// import { CredentialsContext } from "../App";
+import { CredentialsContext } from "../App";
 // import { v4 as uuidv4 } from "uuid";
 import logo from "../design/logo/logo_nobackgound.svg";
 import "./Account.css";
@@ -9,51 +9,36 @@ export default function Account() {
 	const [user, setUser] = useState();
 	const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");
-	// useEffect(() => {
-	// 	const loggedInUser = localStorage.getItem("user");
-	// 	if (loggedInUser) {
-	// 		const foundUser = JSON.parse(loggedInUser);
-	// 		setUser(foundUser);
-	// 	}
-	// }, []);
-	// const [account, setAccount] = useState([]);
-	// 	useEffect(() => {
-	// 			fetch(`https://afternoon-everglades-00122.herokuapp.com/`, {
-	// 				method: "GET",
-	// 				headers: {
-	// 					"Content-Type": "application/json",
-	// 					Authorization: `Basic ${credentials.username}:${credentials.password}`,
-	// 				},
-	// 			})
-	// 				.then((response) => response.json())
-	// 				.then((todos) => setTodos(todos));
-	// 		}, []);
-
+	const [credentials, setCredentials] = useContext(CredentialsContext);
+	const logout = () => {
+		setCredentials(null);
+	};
 	const handleLogout = () => {
 		setUser({});
 		setUsername("");
 		setPassword("");
 		sessionStorage.clear();
-	}
-
-	// if (user) {
-	// 	return (
-	// 		<div>
-	// 			{user.name} is logged in user
-	// 			<button onClick={}>Logout</button>
-	// 		</div>
-	// 	);
-	// }
+	};
 
 	return (
 		<div className=" accountBody">
 			<div className="accountNavbar">
-				<button className="accountHome">
-					<img className="accountGlass" src={logo} alt="icon" />
+				<button className="accountHome" onClick={handleLogout}>
+					<Link to="/">
+						<img className="accountGlass" src={logo} alt="icon" />
+					</Link>
 				</button>
 				<div className="buttonToggle">
-					<button className="remindersBtn">Reminders</button>
-					<button className="accountBtn">Account</button>
+					<button className="remindersBtn">
+						<Link className="remindersBtn" to="/todos">
+							Reminders
+						</Link>
+					</button>
+					<button className="accountBtn accountAcc">
+						<Link className="remindersBtn" to="/account">
+							Account
+						</Link>
+					</button>
 				</div>
 			</div>
 			<h1 className="accountTitle">Account</h1>
@@ -62,19 +47,33 @@ export default function Account() {
 					<form className="accountForm">
 						<div className="accountInfoFormText">
 							<h2 className="accountNames">Name</h2>
-							<input placeholder="name" />
+							<div className="accountEdit">
+								<input
+									type="text"
+									placeholder={credentials && credentials.username}
+								/>
+								<a href="#">edit</a>
+							</div>
 							<br />
 							<h2 className="accountNames">Password</h2>
+							<div className="accountEdit">
+								<input type="password" placeholder="***********" />
+								<a href="#">edit</a>
+							</div>
 
-							<input type="password" placeholder="password" />
+							<br />
+							<Link className="accountRegister" to="/register">
+								change password
+							</Link>
+							<br />
 						</div>
-						<br />
-						<Link className="accountRegister" to="/register">
-							change password
-						</Link>
-						<br />
-						<button className="accountSubmitBtn" type="submit" onClick={handleLogout}>
-							Sign out
+						<button
+							className="accountSubmitBtn"
+							type="submit"
+							onClick={handleLogout}
+						>
+							<Link to="/login">{!credentials && "Sign In"}</Link>
+							{credentials && "Sign Out"}
 						</button>
 					</form>
 				</div>

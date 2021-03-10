@@ -17,13 +17,13 @@ function App() {
 	const [password, setPassword] = useState("");
 	const [user, setUser] = useState();
 
-	useEffect(() => {
-		const loggedInUser = sessionStorage.getItem("user");
-		if (loggedInUser) {
-			const foundUser = JSON.parse(loggedInUser);
-			setUser(foundUser);
-		}
-	}, []);
+	// useEffect(() => {
+	// 	const loggedInUser = sessionStorage.getItem("user");
+	// 	if (loggedInUser) {
+	// 		const foundUser = JSON.parse(loggedInUser);
+	// 		setUser(foundUser);
+	// 	}
+	// }, []);
 
 	return (
 		<div className="App">
