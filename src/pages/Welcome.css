@@ -3,7 +3,8 @@
     padding: 0;
 
 }
-.body{
+
+.body {
     background-image: url("../design/images/watercooler_main.jpg");
     min-height: 100%;
     width: 100%;
@@ -13,77 +14,90 @@
     position: fixed;
     top: 0;
     left: 0;
-    
+
 }
-.glass, .welcome, .welcomeButton, .welcomeLogin, .welcomeRegister {
+
+.glass,
+.welcome,
+.welcomeButton,
+.welcomeLogin,
+.welcomeRegister {
     display: block;
     justify-content: center;
     align-items: center;
 
 
 }
+
 .glass {
-margin: 180px auto 0 auto;
+    margin: 180px auto 0 auto;
 
 }
+
 .welcome {
-display: block;
-justify-content: center;
-align-items: center;
-margin: 23px auto 0 auto;
-width: 420px;
-height: 84px;
-/* left: 519px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 23px auto 0 auto;
+    width: 420px;
+    height: 84px;
+    /* left: 519px;
 top: 424px; */
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 72px;
-line-height: 84px;
-text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
-.welcomeP {
-margin: 0 auto;
-width: 476px;
-height: 102px;
-padding-top: 15px;
-font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 22px;
-line-height: 33px;
-text-align: center;
 
-color: #FFFFFF;
+.welcomeP {
+    margin: 0 auto;
+    width: 476px;
+    height: 102px;
+    padding-top: 15px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #FFFFFF;
 
 }
 
 .welcomeButton {
-margin: -10px auto 0 auto;
-width: 301px;
-height: 41px;
-border: none;
+    margin: -10px auto 0 auto;
+    width: 301px;
+    height: 41px;
+    border: none;
 
-background: #49A8B2;
-border-radius: 10px;
+    background: #49A8B2;
+    border-radius: 10px;
 }
-.welcomeRegister, .welcomeLogin {
+
+.welcomeRegister,
+.welcomeLogin {
     color: white;
     text-decoration: none;
 }
+
 .signinContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+
 .member {
- color: white;
- font-weight: 400;
- font-size: 12px;
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
 }
+
 .welcomeLogin {
     color: white;
     padding: 5px;
