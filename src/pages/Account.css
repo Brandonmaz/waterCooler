@@ -6,13 +6,14 @@
     padding-left: 52px;
     padding-right: 66px;
 }
+
 .accountBody {
-min-height: 100%;
-width: 100%;
-height: 100%;
-min-height: 100vh;
-background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135, 154, 0) 150.03%);
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135, 154, 0) 150.03%);
 }
+
 .accountHome {
     width: 105px;
     height: 105px;
@@ -23,18 +24,22 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     margin-top: 45px;
     cursor: pointer;
 }
+
 .accountGlass {
     width: 64px;
     height: 91px;
-    
+
 }
+
 .buttonToggle {
     margin-top: 56px;
 }
+
 .accountAcc {
-        box-shadow: -11px 2px 33px rgba(0, 0, 0, 0.16);
+    box-shadow: -11px 2px 33px rgba(0, 0, 0, 0.16);
 
 }
+
 .accountBtn,
 .remindersBtn {
     width: 158px;
@@ -52,13 +57,14 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     text-decoration: none;
 
 }
+
 .accountBtn:hover,
 .remindersBtn:hover {
     color: white;
 }
 
 .accountTitle {
-    
+
     display: block;
     margin: 75px auto 0 auto;
     width: 251px;
@@ -79,9 +85,10 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     display: flex;
     flex-wrap: wrap;
 }
+
 .accountInfo {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 6em auto;
     width: 503px;
     height: 598px;
     background: #6ECCB1;
@@ -94,8 +101,9 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     flex-direction: column;
     margin-left: 50px;
     margin-top: 76px;
-    
+
 }
+
 .accountNames {
     display: flex;
     align-items: flex-start;
@@ -108,18 +116,21 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     color: #FFFFFF;
     margin-top: 76px;
 
-    
+
 
 }
+
 .accountEdit {
     display: flex;
     align-items: center;
-    
+
 }
+
 .accountEdit>a {
     margin-top: 15px;
     color: white;
 }
+
 .accountEdit>input {
     font-family: 'Poppins';
     font-style: normal;
@@ -134,14 +145,15 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     outline: none;
     /* margin-left: -110px; */
 }
+
 .accountEdit>input:focus {
     background: #5AA58F
-
 }
-.icon::before
-.accountEdit>input::placeholder {
+
+.icon::before .accountEdit>input::placeholder {
     color: #FFFFFF;
 }
+
 .accountSubmitBtn {
     width: 175px;
     height: 41px;
@@ -154,6 +166,7 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     outline: none;
     -webkit-tap-highlight-color: transparent;
 }
+
 .accountRegister {
     display: flex;
     width: 120px;
@@ -163,11 +176,12 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
-    
-    
+
+
     text-decoration-line: underline;
     color: #FFFFFF;
 }
+
 /* Notification tag */
 .notificationInfo {
     display: block;
@@ -176,6 +190,7 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     color: #FFFFFF;
 
 }
+
 .notifactionSwitch {
     font-family: Poppins;
     font-style: normal;
@@ -199,7 +214,7 @@ background: linear-gradient(180deg, rgba(0, 173, 111, 0.7) -1.46%, rgba(12, 135,
     opacity: 0;
     width: 0;
     height: 0;
-    
+
 }
 
 .slider {
@@ -259,12 +274,13 @@ input:checked+.slider:before {
     height: 81px;
     background: #5AA58F;
     box-shadow: -3px 4px 14px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;    
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 11px auto 24px auto;
 }
+
 .statusP {
     align-items: center;
     margin-left: 45px;
@@ -289,6 +305,7 @@ input:checked+.slider:before {
 
 
 @media only screen and (max-width: 768px) {
+
     /* .accountBody {
         background-color: rgba(0, 0, 0, 0.33);
     } */
@@ -296,13 +313,16 @@ input:checked+.slider:before {
         width: 80px;
         height: 80px;
     }
+
     .accountGlass {
         width: 54px;
         height: 79px;
     }
+
     .buttonToggle {
         margin-top: 56px;
     }
+
     .accountInfoBox {
         margin-top: 74px;
         display: flex;
@@ -310,24 +330,29 @@ input:checked+.slider:before {
         /* flex-direction: row-reverse; */
         flex-direction: column-reverse;
     }
+
     .accountBtn,
     .remindersBtn {
         width: 128px;
         height: 48px;
     }
+
     .accountInfo {
         width: 450px;
         height: 500px;
         margin-bottom: 56px;
     }
+
     .accountInfoFormText>input {
         width: 300px;
     }
+
     .accountSubmitBtn {
         margin-top: 60px;
     }
+
     .accountStatusInfo {
         margin-bottom: 30px;
     }
-   
+
 }

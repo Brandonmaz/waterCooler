@@ -1,12 +1,9 @@
 .todosBody {
-    min-height: 100%;
+    min-height: 100vh;
     width: 100%;
-    height: auto;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
     background: linear-gradient(0deg, rgba(12, 135, 154, 0) -1.46%, rgba(0, 90, 104, 0.7) 103.03%);
 }
 
@@ -56,6 +53,7 @@
     cursor: pointer;
     outline: none;
 }
+
 .accountBtn:hover,
 .remindersBtn:hover {
     color: white;
@@ -150,7 +148,7 @@ summary::-webkit-details-marker {
 }
 
 .list-todos {
-    height: 100vh;
+    height: 60vh;
 }
 
 select {
@@ -271,6 +269,7 @@ select:hover {
     margin-bottom: 11px;
     filter: drop-shadow(-5px 2px 4px rgba(0, 0, 0, 0.2));
 }
+
 .todo-Box {
     overflow-y: scroll;
     height: 395px;
@@ -278,6 +277,7 @@ select:hover {
     margin-right: 120px;
     padding: 10px;
 }
+
 .todo-Box::-webkit-scrollbar {
     display: none;
 }
@@ -293,7 +293,7 @@ select:hover {
 }
 
 /* Switch icon css */
-.switch {
+.switch-create {
     position: relative;
     display: inline-block;
     width: 33px;
@@ -301,7 +301,7 @@ select:hover {
     margin-right: 26px;
 }
 
-.switch input {
+.switch-create input {
     opacity: 0;
     width: 0;
     height: 0;
